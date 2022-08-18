@@ -1,0 +1,126 @@
+*{
+   box-sizing: border-box;
+}
+img{
+   width: 85%;
+}
+
+body{
+   /* background:linear-gradient(to right, #7600bc, #4c00b0); */
+   background: url("/img/hero.jpg") no-repeat center center/cover;
+   color: white;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   overflow: hidden;
+   margin:0;
+}
+
+.design{
+   padding-bottom: 70px;
+   height: auto;
+   background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 3em;
+   border-radius: 30px;
+   box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+.user_form{
+   width: 100%;
+   max-width: 800px;
+}
+
+
+.user_form input{
+   width: 100%;
+   max-width: 800px;
+   height: 55px;
+   display: block;
+   background-color: black;
+   border: none;
+   border-radius: 15px;
+   color: white;
+   padding: 1rem;
+   margin-bottom: 2rem;
+   font-family: inherit;
+   font-size: 1rem;
+   box-shadow: 10px 10px 10px rgb(99, 99, 99);
+}
+
+.user_form input::placeholder{
+   color: #bbb;
+   font-size: large;
+}
+
+.user_form input:focus{
+   outline: none;
+}
+
+
+.info{
+   max-width: 900px;
+   background: black;
+   border-radius: 20px;
+   box-shadow: 10px 10px 10px rgb(99, 99, 99);
+   display: flex;
+   padding: 3rem;
+   margin: 0 1.5rem;
+}
+
+.picture{
+   border-radius: 20%;
+   border: 5px solid #4c00b0; 
+   height: 150px;
+   width: 150px;
+}
+
+.user_info{
+   color: white;
+   margin-left: 2rem;
+   font-size: large;
+}
+
+.user_info h2 {
+   margin-top: 0;
+}
+
+.user_info ul{
+   display: flex;
+   list-style-type: none;
+   justify-content: space-between;
+   padding: 0;
+   max-width: 400px;
+}
+
+user_info ul li{
+   display: flex;
+   align-items: center;
+}
+
+.repo{
+   text-decoration: none;
+   color: white;
+   background-color:#4c00b0 ;
+   font-size: 1rem;
+   padding: 0.5rem 0.9rem;
+   margin-right: 0.5rem;
+   margin-bottom: 0.5rem;
+   display: inline-block;
+}
+
+@media(max-width: 500px){
+   .info{
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .user_form{
+      max-width: 400px;
+   }
+}
